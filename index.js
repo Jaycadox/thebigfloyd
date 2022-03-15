@@ -1,8 +1,15 @@
 const games = document.getElementsByClassName("games")[0]
 let translationTable = []
 const downloadBtn = document.getElementById("download-click");
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
 const download = url => {
-    return fetch(url).then(resp => resp.blob());
+    const options = {
+        method: 'GET',
+        mode: 'no-cors'
+      };
+    return fetch(url, options).then(resp => resp.blob());
   };
   
   const downloadByGroup = async (urls, files_per_group=5) => {
@@ -49,6 +56,10 @@ function listGame(game)
     div.className = "game";
     const text = document.createElement("p");
     text.innerHTML = game.name;
+    text.className = "game-text";
+    text.onclick = (e) => { 
+        window.location.replace(game.url);
+    };
     div.appendChild(text);
     const input = document.createElement("input");
     input.setAttribute('type', 'checkbox');
@@ -74,7 +85,7 @@ const gamesToList = [
     game("FNAF Ultimate Custom Night (268MB)", "https://github.com/Jaycadox/thebigfloyd/raw/main/cdn/FNAFUltimateCustomNight.exe"),
     game("Halo: Combat Evolved (99MB)", "https://github.com/Jaycadox/thebigfloyd/raw/main/cdn/HaloCombatEvolved.exe"),
     game("Counter Strike Source (102MB)", "https://github.com/Jaycadox/thebigfloyd/raw/main/cdn/CounterStrikeSource.exe"),
-    game("Powder Toy (5MB)", "https://github.com/Jaycadox/thebigfloyd/raw/main/raw/main/cdn/PowderToy.exe"),
+    game("Powder Toy (5MB)", "https://github.com/Jaycadox/thebigfloyd/raw/main/cdn/PowderToy.exe"),
 
 ];
 addAllGames(gamesToList);
@@ -91,11 +102,41 @@ function getAllSelectedGames() {
     });
     return list;
 }
-
-
+function download_files(files) {
+    function download_next(i) {
+      if (i >= files.length) {
+        return;
+      }
+      var a = document.createElement('a');
+      a.href = files[i].download;
+      a.target = '_parent';
+      // Use a.download if available, it prevents plugins from opening.
+      if ('download' in a) {
+        a.download = files[i].filename;
+      }
+      // Add a to the doc for click to work.
+      (document.body || document.documentElement).appendChild(a);
+      if (a.click) {
+        a.click(); // The click method is supported by most browsers.
+      } else {
+        $(a).click(); // Backup using jquery
+      }
+      // Delete the temporary link.
+      a.parentNode.removeChild(a);
+      // Download the next file with a small timeout. The timeout is necessary
+      // for IE, which will otherwise only download the first file.
+      setTimeout(function() {
+        download_next(i + 1);
+      }, 500);
+    }
+    // Initiate the first download.
+    download_next(0);
+  }
 downloadBtn.onclick = (e) => {
     e.preventDefault();
-    const parent = downloadBtn.parentNode;
+    //This works, or would. Fuck CORS, and fuck GitHub pages not giving you access to LFG files >:(
+    /**
+     const parent = downloadBtn.parentNode;
     parent.className = "download-disable";
     downloadBtn.setAttribute('value', "Downloading.. (this may take a while)");
     translationTable = []
@@ -110,4 +151,11 @@ downloadBtn.onclick = (e) => {
             downloadBtn.setAttribute('value', "Download as .ZIP");
             console.log("done");
         })
+     */
+    urlList = []
+    getAllSelectedGames().forEach(async (g) => {
+        urlList.push({download: g.url, filename: g.name + ".exe"});
+    });
+    console.log(urlList);
+    download_files(urlList);
 };

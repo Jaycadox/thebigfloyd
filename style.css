@@ -7,6 +7,12 @@
     overflow-y: hidden;
     scrollbar-width: thin;
 }
+
+.game-text:hover {
+    color: #ddd;
+    cursor: pointer;
+}
+
 hr{
     height: 1px;
     background-color: #333;

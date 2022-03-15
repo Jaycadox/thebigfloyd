@@ -68,13 +68,13 @@ function addAllGames(list)
 }
 
 const gamesToList = [
-    game("Five Nights At Freddys 1 (225MB)", "/thebigfloyd/cdn/FiveNightsAtFreddys.exe"),
-    game("Five Nights At Freddys 2 (212MB)", "/thebigfloyd/cdn/FiveNightsAtFreddys2.exe"),
-    game("Five Nights At Freddys 3 (111MB)", "/thebigfloyd/cdn/FiveNightsAtFreddys3.exe"),
-    game("FNAF Ultimate Custom Night (268MB)", "/thebigfloyd/cdn/FNAFUltimateCustomNight.exe"),
-    game("Halo: Combat Evolved (99MB)", "/thebigfloyd/cdn/HaloCombatEvolved.exe"),
-    game("Counter Strike Source (102MB)", "/thebigfloyd/cdn/CounterStrikeSource.exe"),
-    game("Powder Toy (5MB)", "/thebigfloyd/cdn/PowderToy.exe"),
+    game("Five Nights At Freddys 1 (225MB)", "https://github.com/Jaycadox/thebigfloyd/raw/main/cdn/FiveNightsAtFreddys.exe"),
+    game("Five Nights At Freddys 2 (212MB)", "https://github.com/Jaycadox/thebigfloyd/raw/main/cdn/FiveNightsAtFreddys2.exe"),
+    game("Five Nights At Freddys 3 (111MB)", "https://github.com/Jaycadox/thebigfloyd/raw/main/cdn/FiveNightsAtFreddys3.exe"),
+    game("FNAF Ultimate Custom Night (268MB)", "https://github.com/Jaycadox/thebigfloyd/raw/main/cdn/FNAFUltimateCustomNight.exe"),
+    game("Halo: Combat Evolved (99MB)", "https://github.com/Jaycadox/thebigfloyd/raw/main/cdn/HaloCombatEvolved.exe"),
+    game("Counter Strike Source (102MB)", "https://github.com/Jaycadox/thebigfloyd/raw/main/cdn/CounterStrikeSource.exe"),
+    game("Powder Toy (5MB)", "https://github.com/Jaycadox/thebigfloyd/raw/main/raw/main/cdn/PowderToy.exe"),
 
 ];
 addAllGames(gamesToList);

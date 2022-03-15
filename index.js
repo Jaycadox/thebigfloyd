@@ -68,13 +68,13 @@ function addAllGames(list)
 }
 
 const gamesToList = [
-    game("Five Nights At Freddys 1 (225MB)", "../cdn/Five Nights At Freddys.exe"),
-    game("Five Nights At Freddys 2 (212MB)", "../cdn/Five Nights At Freddys 2.exe"),
-    game("Five Nights At Freddys 3 (111MB)", "../cdn/Five Nights At Freddys 3.exe"),
-    game("FNAF Ultimate Custom Night (268MB)", "../cdn/FNAF Ultimate Custom Night.exe"),
-    game("Halo: Combat Evolved (99MB)", "../cdn/Halo Combat Evolved.exe"),
-    game("Counter Strike Source (102MB)", "../cdn/Counter Strike Source.exe"),
-    game("Powder Toy (5MB)", "../cdn/Powder Toy.exe"),
+    game("Five Nights At Freddys 1 (225MB)", "/thebigfloyd/cdn/Five Nights At Freddys.exe"),
+    game("Five Nights At Freddys 2 (212MB)", "/thebigfloyd/cdn/Five Nights At Freddys 2.exe"),
+    game("Five Nights At Freddys 3 (111MB)", "/thebigfloyd/cdn/Five Nights At Freddys 3.exe"),
+    game("FNAF Ultimate Custom Night (268MB)", "/thebigfloyd/cdn/FNAF Ultimate Custom Night.exe"),
+    game("Halo: Combat Evolved (99MB)", "/thebigfloyd/cdn/Halo Combat Evolved.exe"),
+    game("Counter Strike Source (102MB)", "/thebigfloyd/cdn/Counter Strike Source.exe"),
+    game("Powder Toy (5MB)", "/thebigfloyd/cdn/Powder Toy.exe"),
 
 ];
 addAllGames(gamesToList);

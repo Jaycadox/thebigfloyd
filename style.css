@@ -13,7 +13,7 @@ hr{
     border: none;
 }
 body {
-    background: url("../cdn/background.png");
+    background: url("./cdn/background.png");
     background-size: cover;
     background-repeat: no-repeat;
 }

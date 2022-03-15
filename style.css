@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 200;
+    line-height: 150%;
+    overflow-y: hidden;
+    scrollbar-width: thin;
+}
+hr{
+    height: 1px;
+    background-color: #333;
+    border: none;
+}
+body {
+    background: url("../cdn/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.download-disable {
+    justify-self: right;
+}
+.download {
+    justify-self: right;
+}
+.games {
+    height: 400px;
+    overflow-y: scroll;
+}
+.download input {
+    background-color: rgb(28, 135, 241);
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 20px;
+    border: 2px solid rgb(25, 120, 214);
+}
+.download-disable input {
+    background-color: rgb(44, 44, 44);
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 3px;
+    font-size: 20px;
+    border: 2px solid rgb(10, 10, 10);
+}
+.gamelist {
+    display: grid;
+    align-items: 1fr 4fr;
+    height: 100%;
+}
+.content {
+    height: 100%;
+}
+.sep {
+    margin: 0 auto;
+    background-color: #222;
+}
+.game {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.game input {
+    transform: scale(1.5);
+    margin: 10px;   
+}
+header {
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    font-size: 3em;
+}
+h1 {
+    font-family: 'League Gothic', sans-serif;
+    text-align: left;
+    font-size: 5em;
+    text-shadow: 0px 0px 10px #fff;
+    margin: 40px 100px;
+}
+
+.tiles {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: space-evenly;
+}
+
+.tile {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 400px;
+    height: 600px;
+    background-color: #111;
+    opacity: 100%;
+    box-shadow: 0px 3px 60px #000;
+    border-radius: 12px;
+    border-width: 2px;
+    border-color: #aaa;
+    border-style: solid;
+    color: #fff;
+    font-family: 'Fredoka' sans-serif;
+    padding: 20px;
+}
+.watermark {
+    position:absolute;
+    font-weight: bold;
+    margin-left: 90%;
+    margin-top: 48%;
+
+}

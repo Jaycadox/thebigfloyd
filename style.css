@@ -7,7 +7,18 @@
     overflow-y: hidden;
     scrollbar-width: thin;
 }
-
+*::-webkit-scrollbar {
+    width: 5px;               /* width of the entire scrollbar */
+}
+  
+*::-webkit-scrollbar-track {
+    background: #222;        /* color of the tracking area */
+}
+  
+*::-webkit-scrollbar-thumb {
+    background-color: #666;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+}
 .game-text:hover {
     color: #ddd;
     cursor: pointer;
@@ -73,8 +84,12 @@ body {
     margin-bottom: 15px;
     margin-top: 15px;
 }
+
 .game input {
-    transform: scale(1.5);
+    transform: scale(1.6);
+    border: none;
+    border-radius: 0px;
+    outline-color: tomato;
     margin: 10px;   
 }
 header {

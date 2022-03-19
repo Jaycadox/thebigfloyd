@@ -84,7 +84,8 @@ const gamesToList = [
     game("Five Nights At Freddys 3 (111MB)", "https://github.com/Jaycadox/thebigfloyd/raw/main/cdn/FiveNightsAtFreddys3.exe"),
     game("FNAF Ultimate Custom Night (268MB)", "https://github.com/Jaycadox/thebigfloyd/raw/main/cdn/FNAFUltimateCustomNight.exe"),
     game("Halo: Combat Evolved (99MB)", "https://github.com/Jaycadox/thebigfloyd/raw/main/cdn/HaloCombatEvolved.exe"),
-    game("Counter Strike Source (102MB)", "https://github.com/Jaycadox/thebigfloyd/raw/main/cdn/CounterStrikeSource.exe"),
+    game("CS: Source (102MB)", "https://github.com/Jaycadox/thebigfloyd/raw/main/cdn/CounterStrikeSource.exe"),
+    game("CS: 1.6 (238MB)", "https://github.com/Jaycadox/thebigfloyd/raw/main/cdn/cs_16.zip"),
     game("Powder Toy (5MB)", "https://github.com/Jaycadox/thebigfloyd/raw/main/cdn/PowderToy.exe"),
 
 ];

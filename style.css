@@ -7,6 +7,8 @@
     overflow-y: hidden;
     scrollbar-width: thin;
 }
+
+
 *::-webkit-scrollbar {
     width: 5px;               /* width of the entire scrollbar */
 }
@@ -136,4 +138,34 @@ h1 {
     margin-left: 90%;
     margin-top: 48%;
 
+}
+
+@media (max-width: 960px) {
+    .watercontainer {
+      display: none;
+      width: 0px;
+      height: 0px;
+    }
+    body {
+        background: #030303;
+    }
+    #title {
+        display: none;
+    }
+    .tiles {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        margin-top: 10px;
+        
+    }
+    .tile {
+        min-width: 200px;
+        margin-top: 10px;
+        height: 89vh;
+    }
+    .games {
+        height: 60vh;
+    }
 }

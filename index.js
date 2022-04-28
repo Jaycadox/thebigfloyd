@@ -82,11 +82,13 @@ const gamesToList = [
     game("Five Nights At Freddys 1 (225MB)", "https://github.com/Jaycadox/thebigfloyd/raw/main/cdn/FiveNightsAtFreddys.exe"),
     game("Five Nights At Freddys 2 (212MB)", "https://github.com/Jaycadox/thebigfloyd/raw/main/cdn/FiveNightsAtFreddys2.exe"),
     game("Five Nights At Freddys 3 (111MB)", "https://github.com/Jaycadox/thebigfloyd/raw/main/cdn/FiveNightsAtFreddys3.exe"),
+    game("Five Nights At Freddys: Sister Location (928MB)", "https://github.com/Jaycadox/tbf-cdn-2/raw/main/FNAF%20Sister%20Location.exe"),
     game("FNAF Ultimate Custom Night (268MB)", "https://github.com/Jaycadox/thebigfloyd/raw/main/cdn/FNAFUltimateCustomNight.exe"),
     game("Halo: Combat Evolved (99MB)", "https://github.com/Jaycadox/thebigfloyd/raw/main/cdn/HaloCombatEvolved.exe"),
     game("CS: Source (102MB)", "https://github.com/Jaycadox/thebigfloyd/raw/main/cdn/CounterStrikeSource.exe"),
     game("CS: 1.6 (238MB)", "https://github.com/Jaycadox/thebigfloyd/raw/main/cdn/cs_16.zip"),
-    game("Powder Toy (5MB)", "https://github.com/Jaycadox/thebigfloyd/raw/main/cdn/PowderToy.exe"),
+    game("Powder Toy (5MB)", "https://github.com/Jaycadox/thebigfloyd/raw/main/cdn/PowderToy.exe")
+    
 
 ];
 addAllGames(gamesToList);

@@ -113,6 +113,7 @@ h1 {
     display: grid;
     grid-template-columns: 1fr 2fr;
     justify-content: space-evenly;
+    padding-bottom: 80px;
 }
 
 .tile {

@@ -84,6 +84,7 @@ const gamesToList = [
     game("Five Nights At Freddys 3 (111MB)", "https://api.jayphen.xyz/content/FiveNightsAtFreddys3.exe"),
     game("Five Nights At Freddys: Sister Location (928MB)", "https://api.jayphen.xyz/content/FiveNightsAtFreddysSisterLocation.exe"),
     game("FNAF Ultimate Custom Night (268MB)", "https://api.jayphen.xyz/content/FNAFUltimateCustomNight.exe"),
+    game("Portal (785MB)", "https://api.jayphen.xyz/content/Portal.zip"),
     game("Halo: Combat Evolved (99MB)", "https://api.jayphen.xyz/content/HaloCombatEvolved.exe"),
     game("CS: Source (102MB)", "https://api.jayphen.xyz/content/CounterStrikeSource.exe"),
     game("CS: 1.6 (238MB)", "https://api.jayphen.xyz/content/cs_16.zip"),

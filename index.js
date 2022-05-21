@@ -86,6 +86,7 @@ const gamesToList = [
     game("FNAF Ultimate Custom Night (268MB)", "https://api.jayphen.xyz/content/FNAFUltimateCustomNight.exe"),
     game("Portal (785MB)", "https://api.jayphen.xyz/content/Portal.zip"),
     game("Portal 2 (7GB)", "https://api.jayphen.xyz/content/Portal2.zip"),
+    game("Subnautica (4GB)", "https://api.jayphen.xyz/content/Subnautica.rar"),
     game("Half Life 2 (2GB)", "https://api.jayphen.xyz/content/HalfLife2.zip"),
     game("Halo: Combat Evolved (99MB)", "https://api.jayphen.xyz/content/HaloCombatEvolved.exe"),
     game("CS: Source (102MB)", "https://api.jayphen.xyz/content/CounterStrikeSource.exe"),

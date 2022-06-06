@@ -91,6 +91,8 @@ const gamesToList = [
     game("Halo: Combat Evolved (99MB)", "https://api.jayphen.xyz/content/HaloCombatEvolved.exe"),
     game("CS: Source (102MB)", "https://api.jayphen.xyz/content/CounterStrikeSource.exe"),
     game("CS: 1.6 (238MB)", "https://api.jayphen.xyz/content/cs_16.zip"),
+    game("God Of War (27GB)", "https://content.jayphen.xyz/content/GodOfWar.7z"),
+    game("Super Hexagon (50MB)", "https://content.jayphen.xyz/content/SuperHexagon.zip"),
     game("Powder Toy (5MB)", "https://api.jayphen.xyz/content/PowderToy.exe")
     
 
